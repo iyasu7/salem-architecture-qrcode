@@ -2,135 +2,209 @@
 const employees = [
   {
     id: 1,
-    name: "AmehaSelase seleyehun",
-    position: "Senior Architect",
-    description:
-      "Voluptate elit quis ad mollit id minim. Et anim cupidatat deserunt qui id cillum enim reprehenderit occaecat occaecat cillum. Ex do anim aute excepteur officia. Irure reprehenderit nulla consequat laboris aute cillum voluptate esse nulla velit non sunt commodo voluptate. Deserunt ex esse dolor laborum ut elit.",
-    joinedAt: new Date(),
-    isActive: true,
-    linkdin:'https://www.linkedin.com/in/johndoe',
-    email:'abcxyz3@gmail.com',
-    phone: '+251911341111',
+    name: "Israel Mesfin Solomon",
+    positions: ["Architect"],
+    email: "israelmesfin97@gmail.com",
+    phone: "+251921797776",
+    imgUrl: "https://i.postimg.cc/pTHkVN7S/Israel-Mesfin-Solomon.png",
   },
   {
     id: 2,
-    name: "Mahelet seleyehun",
-    position: "architect",
-    description:
-      "Duis minim voluptate adipisicing Lorem consectetur elit commodo consequat eu irure. Nostrud non est esse quis labore fugiat esse irure nulla sint enim laboris irure. Ipsum Lorem officia id labore Lorem nulla esse laborum velit. Dolore nulla occaecat magna dolor pariatur mollit reprehenderit dolore anim non dolore sint labore. Est exercitation irure anim esse do culpa adipisicing elit ea duis proident ea qui. Ullamco irure consequat dolor irure cupidatat esse dolor.",
-    joinedAt: new Date(),
-    isActive: true,
-    linkdin:'https://www.linkedin.com/in/johndoe',
-    email:'abcxyz3@gmail.com',
-    phone: '+251911111161',
+    name: "Abdulkerim Yesuf Mekonene",
+    positions: ["Associate Engineer", "Liaison Officer"],
+    email: "abduyesuf1992@gmail.com",
+    phone: "+251994672469",
+    imgUrl: "https://i.postimg.cc/Vv1KLyS6/Abdulkerim-Yesuf-Mekonene.png",
   },
   {
     id: 3,
-    name: "Seleyehun amehaSelase",
-    position: "Senior Architect",
-    description:
-      "Esse consequat qui voluptate et aliqua ut irure anim dolore eu. Pariatur amet proident aute magna ipsum ipsum ullamco minim exercitation consectetur labore amet sunt. Dolore ut non incididunt deserunt exercitation nostrud excepteur in minim et reprehenderit. Nulla adipisicing excepteur aute eu. Ut aliquip tempor cillum non sunt anim laboris laborum ut cupidatat occaecat sint enim. Ullamco incididunt ut occaecat pariatur adipisicing do nulla commodo mollit id quis.",
-    joinedAt: new Date(),
-    isActive: true,
-    linkdin:'https://www.linkedin.com/in/johndoe',
-    email:'abcxyz3@gmail.com',
-    phone: '+251911111123',
+    name: "Amehaselassie Sallehunae",
+    positions: ["Architect"],
+    email: "ameha12@gmail.com",
+    phone: "+251913464640",
+    imgUrl: "https://i.postimg.cc/pXTP2rgg/Amehaselassie-Sallehunae.png",
+
   },
   {
-    id: 1,
-    name: "AmehaSelase seleyehun",
-    position: "Marketing Exec. at Denva Corp",
-    description:
-      "Do dolor id velit ad ad. Pariatur deserunt sunt nostrud proident incididunt exercitation nostrud anim veniam voluptate et labore commodo. Dolor labore dolor aliqua mollit tempor exercitation ea eu ullamco dolor ullamco esse. Non aute eiusmod minim proident ex nisi duis tempor nulla eu. Aute incididunt pariatur non incididunt deserunt sint.",
-    joinedAt: new Date(),
-    isActive: true,
-    linkdin:'https://www.linkedin.com/in/johndoe',
-    email:'abcxyz3@gmail.com',
-    phone: '+251915211111',
+    id: 4,
+    name: "Selamawit Jenberu Belay",
+    positions: ["Engineer"],
+    email: "",
+    phone: "+251913812051",
+    imgUrl: "https://i.postimg.cc/wTZYgV5m/Selamawit-Jenberu-Belay.png",
   },
   {
-    id: 2,
-    name: "Mahele seleyehun",
-    position: "architect",
-    description:
-      "Proident in laboris elit non nostrud culpa id ex esse amet. Qui cillum veniam dolor excepteur esse cupidatat. Minim amet labore officia ut proident mollit officia reprehenderit et. Eu enim nostrud enim do aute sunt velit amet.",
-    joinedAt: new Date(),
-    isActive: true,
-    linkdin:'https://www.linkedin.com/in/johndoe',
-    email:'abcxyz3@gmail.com',
-    phone: '+251911123578',
+    id: 5,
+    name: "Eskedar Moges Mekonnen",
+    positions: ["Architect"],
+    email: "eskedarmoges@gmail.com",
+    phone: "+251911018259",
+    imgUrl: "https://i.postimg.cc/Y9Ph1PLx/Eskedar-Moges-Mekonnen.png",
   },
   {
-    id: 3,
-    name: "Seleyehun amehaSelase",
-    position: "architect",
-    description:
-      "Commodo nisi non nisi dolor ipsum laboris excepteur ad aliquip incididunt nostrud. Ex veniam dolor magna quis minim nisi. Do velit nulla magna dolore ad laborum ullamco ad ipsum pariatur nisi ea. Amet do deserunt pariatur do ullamco tempor labore ullamco.",
-    joinedAt: new Date(),
-    isActive: true,
-    linkdin:'https://www.linkedin.com/in/johndoe',
-    email:'abcxyz3@gmail.com',
-    phone: '+251911237418',
+    id: 7,
+    name: "Semere Mechal Tesema",
+    positions: ["Drafts Person"],
+    email: "semeremechal@gmail.com",
+    phone: "+251947690338",
+    imgUrl: "https://i.postimg.cc/52zd0Cpk/Semere-Mechal-Tesema.png",
+  },
+  {
+    id: 8,
+    name: "Ayele Balcha Abebe",
+    positions: ["Engineer"],
+    email: "ayele.balcha@gmail.com ",
+    phone: "+251913057702",
+    imgUrl: "https://i.postimg.cc/wjnq4z4n/Ayele-Balcha-Abebe.png",
+  },
+  {
+    id: 9,
+    name: "Hikma Abdela Ahmed",
+    positions: ["Engineer"],
+    email: "hikmaabdela5@gmail.com",
+    phone: "+251966338139",
+    imgUrl: "https://i.postimg.cc/c1DN5ZrT/Hikma-Abdela-Ahmed.png",
+  },
+  {
+    id: 10,
+    name: "Arefyne Gebreyohannes Ambaye",
+    positions: ["Architect"],
+    email: "dejacharef@gmail.com",
+    phone: "+251902635886",
+    imgUrl: "https://i.postimg.cc/jqhjxGCJ/Arefyne-Gebreyohannes-Ambaye.png",
+  },
+  {
+    id: 11,
+    name: "Dejene Demissu",
+    positions: ["Engineer", "Quantity Surveyor"],
+    email: "dejene.demisu72@gmail.com",
+    phone: "+251913812051",
+    imgUrl: "https://i.postimg.cc/pTJPdFVt/Dejene-Demissu.png",
+  },
+  {
+    id: 12,
+    name: "Tezerawork Alemu",
+    positions: ["Administrator"],
+    email: "",
+    phone: "+251913812051",
+    imgUrl: "",
+  },
+  {
+    id: 13,
+    name: "Hemen Sallehunae",
+    positions: ["Architect"],
+    email: "hemen2448@gmail.com",
+    phone: "+251913812051",
+    imgUrl: "https://i.postimg.cc/7hQ8C1pj/Hemen-Sallehunae.png",
+  },
+  {
+    id: 14,
+    name: "Almaw Gebru",
+    positions: ["Driver", "Courier"],
+    email: "",
+    phone: "+251967113211",
+    imgUrl: "https://i.postimg.cc/yxTx2G3c/Almaw-Gebru.png",
+  },
+  {
+    id: 15,
+    name: "Sallehunae Kefyalew",
+    positions: ["CEO", "Architect"],
+    email: "salemaande@gmail.com",
+    phone: "+251911210462",
+    imgUrl: "https://i.postimg.cc/3rkSjDD8/Sallehunae-Kefyalew.png",
   },
 ];
 const { name } = useRoute().params;
 const employee = employees.find((employee) => employee.name === name);
+const img = employee?.name.split(' ','-')[0]
 </script>
 
 <template>
   <div class="flex justify-center items-center h-screen bg-gray-900">
-    <div class="bg-gray-800 shadow-lg rounded-lg w-full max-w-md mx-4 sm:mx-0">
+    <div class="bg-gray-800 shadow-lg rounded-lg w-full max-w-md mx-2 sm:mx-0">
       <div class="p-6">
+        {{
+          img
+        }}
         <div class="flex items-center">
-          <div class="w-24 h-24 rounded-full bg-gray-200 overflow-hidden mr-4">
+          <div class="w-24 h-24 rounded-full  overflow-hidden mr-4">
             <img
-              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
-              :alt="employee.name"
+              :src="employee?.imgUrl"
+              :alt="employee?.name"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               class="w-full h-full object-cover"
             />
           </div>
           <div>
             <h2 class="text-2xl font-bold text-gray-100">
-              {{ employee.name }}
+              {{ employee?.name }}
             </h2>
-            <p class="text-gray-300 font-semibold">{{ employee.position }}</p>
+            <p class="text-gray-300 font-semibold">
+              {{
+                employee?.positions
+                  .map(
+                    (position, index) =>
+                      `${position}${
+                        index === employee?.positions.length - 1 ? "" : " / "
+                      }`
+                  )
+                  .join("")
+              }}
+            </p>
           </div>
         </div>
-        <div class="mt-6 text-center mb-4">
-          <p class="text-gray-400">
-            <i class="fas fa-map-marker-alt mr-2"></i>
-            Salem architecture.<br />
-            Abo Sarebet, Addis Ababa, Ethiopia
-          </p>
+        <div class="mt-4 text-center mb-2">
+          <NuxtLink
+            target="_blank"
+            to="`https://salemconsult.com/`"
+            class="text-gray-300"
+          >
+            <p class="text-gray-400 flex flex-col">
+              <span class="text-gray-300">SALEM CONSULT</span>
+              <span class="text-gray-300 text-xs"
+                >ARCHITECTURAL AND ENGINEERING CONSULTANTS</span
+              >
+            </p></NuxtLink
+          >
+          <br />
+          <NuxtLink
+            target="_blank"
+            to="https://maps.app.goo.gl/t1edof81hXJipDYj8"
+          >
+            <div class="flex items-center justify-center">
+              <MyLocation class="w-8 h-8 mr-2" />
+              <span class="text-gray-300"
+                >Lesotho St, Addis Ababa, Ethiopia</span
+              >
+            </div>
+          </NuxtLink>
+
           <div class="flex mt-4 justify-between">
             <a
-              :href="`tel:${employee.phone}`"
-              class="text-blue-500 hover:text-blue-700 mr-4"
+              :href="`tel:${employee?.phone}`"
+              class="text-blue-500 hover:text-blue-700 mr-4 flex items-center gap-3"
             >
-              <i class="fas fa-phone-alt mr-2"></i> {{ employee.phone }}
+              <CallMe class="w-10 h-10" />
+              Call
             </a>
             <a
-              :href="`mailto:${employee.email}`"
-              class="text-blue-500 hover:text-blue-700"
+              :href="`mailto:${employee?.email}`"
+              class="text-blue-500 hover:text-blue-700 flex items-center gap-3"
             >
-               {{ employee.email }}
+              <EmailMe class="w-12 h-12" />
+              Email Me
             </a>
           </div>
         </div>
-        <p
-          class="text-center text-sm leading-6 text-gray-200 hover:text-gray-100 line-clamp-4"
-        >
-          {{ employee.description }}
-        </p>
 
-        <div class="mt-6 flex justify-end gap-4">
-          <!-- <NuxtLink
+        <!-- <div class="mt-6 flex justify-end gap-4">
+          <NuxtLink
             :to="employee.email"
             target="_blank"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
           >
             <Email/> Send Email
-          </NuxtLink> -->
+          </NuxtLink> 
           <NuxtLink
             :to="employee.linkedin"
             target="_blank"
@@ -138,7 +212,7 @@ const employee = employees.find((employee) => employee.name === name);
           >
             <Calander/> Connect on LinkedIn
           </NuxtLink>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>

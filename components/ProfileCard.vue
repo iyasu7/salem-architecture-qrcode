@@ -1,29 +1,99 @@
 <script lang="ts" setup>
-const { employee } = defineProps(['employee'])
+const { employee } = defineProps(["employee"]);
 </script>
 
 <template>
-    <div class="text-gray-100">
-  <div class="rounded-lg border bg-gray-800 px-4 pt-4 pb-6 shadow-lg">
-    <div class="relative w-36 mx-auto rounded-full">
-      <span class="absolute right-0 m-3 h-3 w-3 rounded-full"
-      :class="employee.isActive ? ' bg-green-500 ring-2 ring-green-300 ring-offset-2' : ' bg-gray-500 ring-2 ring-gray-300 ring-offset-2'"></span>
-      <img class="mx-auto h-auto w-full rounded-full" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt="" />
-    </div>
-    <h1 class="my-1 text-center text-xl font-bold leading-8 text-gray-100 uppercase">{{employee.name}}</h1>
-    <h3 class="font-lg text-semibold text-center leading-6 text-gray-200">{{employee.position}}</h3>
-    <p class="text-center text-sm leading-6 text-gray-200 hover:text-gray-100 line-clamp-4">{{ employee.description }}</p>
-    <ul class="mt-3 divide-y rounded bg-gray-700 py-2 px-3 text-gray-100 shadow-sm hover:text-gray-700 hover:shadow">
-      <!-- <li class="flex items-center py-3 text-sm">
-        <span>Status</span>
-        <span class="ml-auto"><span class="rounded-full bg-green-200 py-1 px-2 text-xs font-medium text-green-700">Open for side gigs</span></span>
-      </li> -->
-      <li class="flex items-center py-3 text-sm">
-        <span>Joined On</span>
-        <span class="ml-auto">{{ employee.joinedAt.toDateString() }}</span>
-      </li>
-    </ul>
-  </div>
-</div>
+  <div class="flex justify-center items-center bg-gray-900">
+    <div class="bg-gray-800 shadow-lg rounded-lg w-full max-w-md mx-2 sm:mx-0">
+      <div class="p-6">
+        <div class="flex items-center">
+          <div class="w-24 h-24 rounded-full  overflow-hidden mr-4">
+            <img
+              :src="employee?.imgUrl"
+              :alt="employee?.name"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="space-y-1">
+            <h2 class="text-2xl font-semibold text-gray-100">
+              {{ employee?.name }}
+            </h2>
+            <p class="text-gray-300 font-semibold h-12">
+              {{
+                employee?.positions
+                  .map(
+                    (position, index) =>
+                      `${position}${
+                        index === employee?.positions.length - 1 ? "" : " / "
+                      }`
+                  )
+                  .join("")
+              }}
+            </p>
+          </div>
+        </div>
+        <div class="mt-3 text-center mb-2">
+          <NuxtLink
+            target="_blank"
+            to="`https://salemconsult.com/`"
+            class="text-gray-300"
+          >
+            <p class="text-gray-400 flex flex-col">
+              <span class="text-gray-300 mb-1 text-lg font-bold">SALEM CONSULT</span>
+              <span class="text-gray-300 text-xs"
+                >ARCHITECTURAL AND ENGINEERING CONSULTANTS</span
+              >
+            </p></NuxtLink
+          >
+          <br />
+          <NuxtLink
+            target="_blank"
+            to="https://maps.app.goo.gl/t1edof81hXJipDYj8"
+          >
+            <div class="flex items-center justify-center">
+              <MyLocation class="w-8 h-8 mr-2" />
+              <span class="text-gray-300 hover:text-gray-500"
+                >Lesotho St, Addis Ababa, Ethiopia</span
+              >
+            </div>
+          </NuxtLink>
 
+          <div class="flex mt-4 justify-between">
+            <a
+              :href="`tel:${employee?.phone}`"
+              class="text-blue-500 hover:text-blue-700 mr-4 flex items-center gap-3"
+            >
+              <CallMe class="w-10 h-10"/>
+              Call
+            </a>
+            <a
+              :href="`mailto:${employee?.email}`"
+              class="text-blue-500 hover:text-blue-700 flex items-center gap-3"
+            >
+            <EmailMe class="w-12 h-12"/>
+            Email
+            </a>
+          </div>
+        </div>
+
+        <!-- <div class="mt-6 flex justify-end gap-4">
+          <NuxtLink
+            :to="employee.email"
+            target="_blank"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
+          >
+            <Email/> Send Email
+          </NuxtLink> 
+          <NuxtLink
+            :to="employee.linkedin"
+            target="_blank"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded flex items-center"
+          >
+            <Calander/> Connect on LinkedIn
+          </NuxtLink>
+        </div>-->
+      </div>
+    </div>
+  </div>
 </template>
