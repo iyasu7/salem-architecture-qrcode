@@ -92,7 +92,7 @@ const employees = [
   {
     id: 13,
     name: "Hemen Sallehunae",
-    positions: ["Engineer", "Quantity Surveyor"],
+    positions: ["Architect"],
     email: "hemen2448@gmail.com",
     phone: "+251913812051",
     imgUrl: "https://i.postimg.cc/7hQ8C1pj/Hemen-Sallehunae.png",

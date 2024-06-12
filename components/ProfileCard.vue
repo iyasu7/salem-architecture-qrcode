@@ -4,11 +4,14 @@ const { employee } = defineProps(["employee"]);
 
 <template>
   <div class="flex justify-center items-center bg-gray-900">
-    <div class="bg-gray-800 shadow-lg rounded-lg w-full max-w-md mx-2 sm:mx-0">
+    <div class="bg-gray-800 shadow-lg rounded-lg w-full max-w-md mx-2 sm:mx-0 min-h-[384px]">
       <div class="p-6">
         <div class="flex items-center">
-          <div class="w-24 h-24 rounded-full  overflow-hidden mr-4">
+          <div class=" minw24 w-24 h-24 rounded-full overflow-hidden mr-4 flex items-center justify-center">
+            <span v-if="!employee?.imgUrl" class="text-6xl font-bold text-[#F9CA6A]">
+            {{ employee?.name.slice(0, 1) }}</span>
             <img
+            v-else
               :src="employee?.imgUrl"
               :alt="employee?.name"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -36,11 +39,14 @@ const { employee } = defineProps(["employee"]);
         <div class="mt-3 text-center mb-2">
           <NuxtLink
             target="_blank"
-            to="`https://salemconsult.com/`"
-            class="text-gray-300"
+            to="https://salemconsult.com"
+            class="text-gray-300 flex items-center"
           >
+            <MyWeb class="w-8 h-8" />
             <p class="text-gray-400 flex flex-col">
-              <span class="text-gray-300 mb-1 text-lg font-bold">SALEM CONSULT</span>
+              <span class="text-gray-300 mb-1 text-lg font-bold"
+                >SALEM CONSULT</span
+              >
               <span class="text-gray-300 text-xs"
                 >ARCHITECTURAL AND ENGINEERING CONSULTANTS</span
               >
@@ -64,13 +70,13 @@ const { employee } = defineProps(["employee"]);
               :href="`tel:${employee?.phone}`"
               class="text-blue-500 hover:text-blue-700 mr-4 flex items-center gap-3"
             >
-              <CallMe class="w-10 h-10"/>
+              <CallMe class="w-10 h-10" />
             </a>
             <a
               :href="`mailto:${employee?.email}`"
               class="text-blue-500 hover:text-blue-700 flex items-center gap-3"
             >
-            <EmailMe class="w-12 h-12"/>
+              <EmailMe class="w-12 h-12" />
             </a>
           </div>
         </div>

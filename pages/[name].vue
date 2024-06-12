@@ -23,7 +23,6 @@ const employees = [
     email: "ameha12@gmail.com",
     phone: "+251913464640",
     imgUrl: "https://i.postimg.cc/pXTP2rgg/Amehaselassie-Sallehunae.png",
-
   },
   {
     id: 4,
@@ -116,18 +115,16 @@ const employees = [
 ];
 const { name } = useRoute().params;
 const employee = employees.find((employee) => employee.name === name);
-const img = employee?.name.split(' ','-')[0]
+const img = employee?.name.split(" ", "-")[0];
 </script>
 
 <template>
   <div class="flex justify-center items-center h-screen bg-gray-900">
     <div class="bg-gray-800 shadow-lg rounded-lg w-full max-w-md mx-2 sm:mx-0">
       <div class="p-6">
-        {{
-          img
-        }}
+        {{ img }}
         <div class="flex items-center">
-          <div class="w-24 h-24 rounded-full  overflow-hidden mr-4">
+          <div class="w-24 h-24 rounded-full overflow-hidden mr-4">
             <img
               :src="employee?.imgUrl"
               :alt="employee?.name"
@@ -156,11 +153,14 @@ const img = employee?.name.split(' ','-')[0]
         <div class="mt-4 text-center mb-2">
           <NuxtLink
             target="_blank"
-            to="`https://salemconsult.com/`"
-            class="text-gray-300"
+            to="https://salemconsult.com"
+            class="text-gray-300 flex items-center justify-center"
           >
+            <MyWeb class="w-8 h-8 mr-3" />
             <p class="text-gray-400 flex flex-col">
-              <span class="text-gray-300">SALEM CONSULT</span>
+              <span class="text-gray-300 mb-1 text-lg font-bold"
+                >SALEM CONSULT</span
+              >
               <span class="text-gray-300 text-xs"
                 >ARCHITECTURAL AND ENGINEERING CONSULTANTS</span
               >
