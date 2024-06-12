@@ -4,7 +4,7 @@ const { employee } = defineProps(["employee"]);
 
 <template>
   <div class="flex justify-center items-center bg-gray-900">
-    <div class="bg-gray-800 shadow-lg rounded-lg w-full max-w-md mx-2 sm:mx-0 min-h-[384px]">
+    <div class="bg-gray-800 shadow-lg rounded-lg w-full max-w-md mx-2 sm:mx-0 min-h-[316px] md:min-h-[352px] lg:min-h-[384px]">
       <div class="p-6">
         <div class="flex items-center">
           <div class=" minw24 w-24 h-24 rounded-full overflow-hidden mr-4 flex items-center justify-center">
@@ -42,7 +42,7 @@ const { employee } = defineProps(["employee"]);
             to="https://salemconsult.com"
             class="text-gray-300 flex items-center"
           >
-            <MyWeb class="w-8 h-8" />
+            <MyWeb class="w-8 h-8 mr-4" />
             <p class="text-gray-400 flex flex-col">
               <span class="text-gray-300 mb-1 text-lg font-bold"
                 >SALEM CONSULT</span
@@ -65,7 +65,7 @@ const { employee } = defineProps(["employee"]);
             </div>
           </NuxtLink>
 
-          <div class="flex mt-4 justify-between">
+          <div class="flex mt-4 justify-between items-center">
             <a
               :href="`tel:${employee?.phone}`"
               class="text-blue-500 hover:text-blue-700 mr-4 flex items-center gap-3"
@@ -80,23 +80,6 @@ const { employee } = defineProps(["employee"]);
             </a>
           </div>
         </div>
-
-        <!-- <div class="mt-6 flex justify-end gap-4">
-          <NuxtLink
-            :to="employee.email"
-            target="_blank"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
-          >
-            <Email/> Send Email
-          </NuxtLink> 
-          <NuxtLink
-            :to="employee.linkedin"
-            target="_blank"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded flex items-center"
-          >
-            <Calander/> Connect on LinkedIn
-          </NuxtLink>
-        </div>-->
       </div>
     </div>
   </div>
