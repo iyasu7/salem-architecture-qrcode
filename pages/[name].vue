@@ -185,14 +185,12 @@ const img = employee?.name.split(" ", "-")[0];
               class="text-blue-500 hover:text-blue-700 mr-4 flex items-center gap-3"
             >
               <CallMe class="w-10 h-10" />
-              Call
             </a>
             <a
               :href="`mailto:${employee?.email}`"
               class="text-blue-500 hover:text-blue-700 flex items-center gap-3"
             >
               <EmailMe class="w-12 h-12" />
-              Email Me
             </a>
           </div>
         </div>
