@@ -196,23 +196,6 @@ const img = employee?.name.split(' ','-')[0]
             </a>
           </div>
         </div>
-
-        <!-- <div class="mt-6 flex justify-end gap-4">
-          <NuxtLink
-            :to="employee.email"
-            target="_blank"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
-          >
-            <Email/> Send Email
-          </NuxtLink> 
-          <NuxtLink
-            :to="employee.linkedin"
-            target="_blank"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded flex items-center"
-          >
-            <Calander/> Connect on LinkedIn
-          </NuxtLink>
-        </div>-->
       </div>
     </div>
   </div>

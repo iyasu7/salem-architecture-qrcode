@@ -117,11 +117,14 @@ const employees = [
 </script>
 
 <template>
+  <div class="py-4 md:py-8">
+    <h1 class="text-3xl font-bold text-center text-[#F9CA6A] mx-4 hover:scale-90">SALEM ARCHITECTURAL AND ENGINEERING CONSULTANCY EMPLOYEES</h1>
+  </div>
   <div class="grid grid-cols-1 md:gap-6 gap-3 sm:grid-cols-2 lg:grid-cols-3">
     <div
       v-for="employee in employees"
       :key="employee.id"
-      class="m-1 md:m-2 lg:m-4"
+      class="m-1 md:m-2 lg:m-4 my-4 md:my-2"
     >
       <NuxtLink :to="`/${employee.name}`">
         <ProfileCard
