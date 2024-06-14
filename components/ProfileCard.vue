@@ -27,7 +27,7 @@ const { employee } = defineProps(["employee"]);
             />
           </div>
           <div class="space-y-1">
-            <h2 class="text-2xl font-semibold text-gray-100 name-font">
+            <h2 class="text-2xl font-semibold text-gray-100">
               {{ employee?.name }}
             </h2>
             <p class="text-gray-300 font-semibold h-12">
@@ -45,11 +45,11 @@ const { employee } = defineProps(["employee"]);
           </div>
         </div>
         <div class="mt-3 text-center mb-2">
-          <p class="text-gray-400 flex flex-col">
-            <span class="text-gray-300 mb-1 text-2xl company tracking-wider"
+          <p class="text-gray-400 flex flex-col company">
+            <span class="text-gray-300 mb-1 text-2xl tracking-wider"
               >SALEM CONSULT</span
             >
-            <span class="text-gray-300 text-xs"
+            <span class="text-gray-300 text-[10px]"
               >ARCHITECTURAL AND ENGINEERING CONSULTANTS</span
             >
           </p>
@@ -69,14 +69,14 @@ const { employee } = defineProps(["employee"]);
           <div class="flex mt-4 justify-between items-center">
             <a
               :href="`tel:${employee?.phone}`"
-              class="text-blue-500 hover:text-blue-700 mr-4 flex items-center gap-3"
+              class="text-blue-500 hover:text-blue-700 flex items-center gap-3"
             >
               <CallMe class="w-10 h-10" />
             </a>
             <NuxtLink
               target="_blank"
               to="https://salemconsult.com"
-              class="text-gray-300 flex items-center"
+              class="text-gray-300 flex items-center "
             >
               <!-- <MyWeb class="w-12 h-12 mr-4" /> -->
               <MyWebLink class="w-10 h-10" />
@@ -95,14 +95,12 @@ const { employee } = defineProps(["employee"]);
   </div>
 </template>
 <style scoped>
-.company {
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: "Protest Revolution", sans-serif;
+@font-face {
+    font-family: salemFont;
+    src: url(../assets/fonts/Architects\ Draft.ttf);
 }
-.name-font {
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-family: "Cormorant Upright", sans-serif;
+  
+.company {
+    font-family: salem;
 }
 </style>

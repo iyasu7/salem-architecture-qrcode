@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// https://i.postimg.cc/8kvFcqyf/Mahelek.png
 const employees = [
   {
     id: 1,
@@ -7,7 +6,7 @@ const employees = [
     positions: ["Architect"],
     email: "israelmesfin97@gmail.com",
     phone: "+251921797776",
-    imgUrl: "https://i.postimg.cc/pTHkVN7S/Israel-Mesfin-Solomon.png",
+    imgUrl: "https://i.postimg.cc/g0jg9vVp/Israel-Mesfin.png",
   },
   {
     id: 2,
@@ -24,7 +23,6 @@ const employees = [
     email: "ameha12@gmail.com",
     phone: "+251913464640",
     imgUrl: "https://i.postimg.cc/pXTP2rgg/Amehaselassie-Sallehunae.png",
-
   },
   {
     id: 4,
@@ -88,7 +86,7 @@ const employees = [
     positions: ["Administrator"],
     email: "",
     phone: "+251913812051",
-    imgUrl: "",
+    imgUrl: "https://i.postimg.cc/8kvFcqyf/Mahelek.png",
   },
   {
     id: 13,
@@ -152,22 +150,15 @@ const img = employee?.name.split(" ", "-")[0];
             </p>
           </div>
         </div>
-        <div class="mt-4 text-center mb-2">
-          <NuxtLink
-            target="_blank"
-            to="https://salemconsult.com"
-            class="text-gray-300 flex items-center justify-center"
-          >
-            <MyWeb class="w-8 h-8 mr-3" />
-            <p class="text-gray-400 flex flex-col">
-              <span class="text-gray-300 mb-1 text-lg font-bold"
-                >SALEM CONSULT</span
-              >
-              <span class="text-gray-300 text-xs"
-                >ARCHITECTURAL AND ENGINEERING CONSULTANTS</span
-              >
-            </p></NuxtLink
-          >
+        <div class="mt-3 text-center mb-2">
+          <p class="text-gray-400 flex flex-col company">
+            <span class="text-gray-300 mb-1 text-2xl tracking-wider"
+              >SALEM CONSULT</span
+            >
+            <span class="text-gray-300 text-[10px]"
+              >ARCHITECTURAL AND ENGINEERING CONSULTANTS</span
+            >
+          </p>
           <br />
           <NuxtLink
             target="_blank"
@@ -175,19 +166,28 @@ const img = employee?.name.split(" ", "-")[0];
           >
             <div class="flex items-center justify-center">
               <MyLocation class="w-8 h-8 mr-2" />
-              <span class="text-gray-300"
+              <span class="text-gray-300 hover:text-gray-500"
                 >Lesotho St, Addis Ababa, Ethiopia</span
               >
             </div>
           </NuxtLink>
 
-          <div class="flex mt-4 justify-between">
+          <div class="flex mt-4 justify-between items-center">
             <a
               :href="`tel:${employee?.phone}`"
-              class="text-blue-500 hover:text-blue-700 mr-4 flex items-center gap-3"
+              class="text-blue-500 hover:text-blue-700 mr-6 flex items-center gap-3"
             >
               <CallMe class="w-10 h-10" />
             </a>
+            <NuxtLink
+              target="_blank"
+              to="https://salemconsult.com"
+              class="text-gray-300 flex items-center mr-6 "
+            >
+              <!-- <MyWeb class="w-12 h-12 mr-4" /> -->
+              <MyWebLink class="w-10 h-10" />
+              </NuxtLink
+            >
             <a
               :href="`mailto:${employee?.email}`"
               class="text-blue-500 hover:text-blue-700 flex items-center gap-3"
@@ -200,3 +200,8 @@ const img = employee?.name.split(" ", "-")[0];
     </div>
   </div>
 </template>
+<style scoped>
+.company {
+    font-family: 'salem';
+}
+</style>

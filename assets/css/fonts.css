@@ -1,0 +1,8 @@
+/* assets/css/fonts.css */
+@font-face {
+    font-family: 'salem';
+    src: url('../fonts/Architects.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

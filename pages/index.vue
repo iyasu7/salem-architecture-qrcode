@@ -6,7 +6,7 @@ const employees = [
     positions: ["Architect"],
     email: "israelmesfin97@gmail.com",
     phone: "+251921797776",
-    imgUrl: "https://i.postimg.cc/pTHkVN7S/Israel-Mesfin-Solomon.png",
+    imgUrl: "https://i.postimg.cc/g0jg9vVp/Israel-Mesfin.png",
   },
   {
     id: 2,
@@ -87,7 +87,7 @@ const employees = [
     positions: ["Administrator"],
     email: "",
     phone: "+251913812051",
-    imgUrl: "",
+    imgUrl: "https://i.postimg.cc/8kvFcqyf/Mahelek.png",
   },
   {
     id: 13,
