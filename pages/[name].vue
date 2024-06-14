@@ -1,8 +1,9 @@
 <script lang="ts" setup>
+// https://i.postimg.cc/8kvFcqyf/Mahelek.png
 const employees = [
   {
     id: 1,
-    name: "Israel Mesfin Solomon",
+    name: "Israel Mesfin",
     positions: ["Architect"],
     email: "israelmesfin97@gmail.com",
     phone: "+251921797776",
@@ -10,11 +11,11 @@ const employees = [
   },
   {
     id: 2,
-    name: "Abdulkerim Yesuf Mekonene",
+    name: "Abdulkerim Yesuf",
     positions: ["Associate Engineer", "Liaison Officer"],
     email: "abduyesuf1992@gmail.com",
     phone: "+251994672469",
-    imgUrl: "https://i.postimg.cc/Vv1KLyS6/Abdulkerim-Yesuf-Mekonene.png",
+    imgUrl: "https://i.postimg.cc/g2sLd8gM/Abdulkerim-Yesuf-Mekonene.png",
   },
   {
     id: 3,
@@ -23,26 +24,27 @@ const employees = [
     email: "ameha12@gmail.com",
     phone: "+251913464640",
     imgUrl: "https://i.postimg.cc/pXTP2rgg/Amehaselassie-Sallehunae.png",
+
   },
   {
     id: 4,
-    name: "Selamawit Jenberu Belay",
+    name: "Selamawit Jenberu",
     positions: ["Engineer"],
     email: "",
     phone: "+251913812051",
-    imgUrl: "https://i.postimg.cc/wTZYgV5m/Selamawit-Jenberu-Belay.png",
+    imgUrl: "https://i.postimg.cc/GmL9M9bv/Selamawit-Jenberu-Belay.png",
   },
   {
     id: 5,
-    name: "Eskedar Moges Mekonnen",
+    name: "Eskedar Moges",
     positions: ["Architect"],
     email: "eskedarmoges@gmail.com",
     phone: "+251911018259",
-    imgUrl: "https://i.postimg.cc/Y9Ph1PLx/Eskedar-Moges-Mekonnen.png",
+    imgUrl: "https://i.postimg.cc/mrMDk9jf/Eskedar.png",
   },
   {
     id: 7,
-    name: "Semere Mechal Tesema",
+    name: "Semere Mechal",
     positions: ["Drafts Person"],
     email: "semeremechal@gmail.com",
     phone: "+251947690338",
@@ -50,15 +52,15 @@ const employees = [
   },
   {
     id: 8,
-    name: "Ayele Balcha Abebe",
+    name: "Ayele Balcha",
     positions: ["Engineer"],
     email: "ayele.balcha@gmail.com ",
     phone: "+251913057702",
-    imgUrl: "https://i.postimg.cc/wjnq4z4n/Ayele-Balcha-Abebe.png",
+    imgUrl: "https://i.postimg.cc/QxkHkcZX/Ayele-Balcha-Abebe.png",
   },
   {
     id: 9,
-    name: "Hikma Abdela Ahmed",
+    name: "Hikma Abdela",
     positions: ["Engineer"],
     email: "hikmaabdela5@gmail.com",
     phone: "+251966338139",
@@ -66,7 +68,7 @@ const employees = [
   },
   {
     id: 10,
-    name: "Arefyne Gebreyohannes Ambaye",
+    name: "Arefyne Gebreyohannes",
     positions: ["Architect"],
     email: "dejacharef@gmail.com",
     phone: "+251902635886",

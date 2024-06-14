@@ -2,7 +2,7 @@
 const employees = [
   {
     id: 1,
-    name: "Israel Mesfin Solomon",
+    name: "Israel Mesfin",
     positions: ["Architect"],
     email: "israelmesfin97@gmail.com",
     phone: "+251921797776",
@@ -10,11 +10,11 @@ const employees = [
   },
   {
     id: 2,
-    name: "Abdulkerim Yesuf Mekonene",
+    name: "Abdulkerim Yesuf",
     positions: ["Associate Engineer", "Liaison Officer"],
     email: "abduyesuf1992@gmail.com",
     phone: "+251994672469",
-    imgUrl: "https://i.postimg.cc/Vv1KLyS6/Abdulkerim-Yesuf-Mekonene.png",
+    imgUrl: "https://i.postimg.cc/g2sLd8gM/Abdulkerim-Yesuf-Mekonene.png",
   },
   {
     id: 3,
@@ -27,23 +27,23 @@ const employees = [
   },
   {
     id: 4,
-    name: "Selamawit Jenberu Belay",
+    name: "Selamawit Jenberu",
     positions: ["Engineer"],
     email: "",
     phone: "+251913812051",
-    imgUrl: "https://i.postimg.cc/wTZYgV5m/Selamawit-Jenberu-Belay.png",
+    imgUrl: "https://i.postimg.cc/GmL9M9bv/Selamawit-Jenberu-Belay.png",
   },
   {
     id: 5,
-    name: "Eskedar Moges Mekonnen",
+    name: "Eskedar Moges",
     positions: ["Architect"],
     email: "eskedarmoges@gmail.com",
     phone: "+251911018259",
-    imgUrl: "https://i.postimg.cc/Y9Ph1PLx/Eskedar-Moges-Mekonnen.png",
+    imgUrl: "https://i.postimg.cc/mrMDk9jf/Eskedar.png",
   },
   {
     id: 7,
-    name: "Semere Mechal Tesema",
+    name: "Semere Mechal",
     positions: ["Drafts Person"],
     email: "semeremechal@gmail.com",
     phone: "+251947690338",
@@ -51,15 +51,15 @@ const employees = [
   },
   {
     id: 8,
-    name: "Ayele Balcha Abebe",
+    name: "Ayele Balcha",
     positions: ["Engineer"],
     email: "ayele.balcha@gmail.com ",
     phone: "+251913057702",
-    imgUrl: "https://i.postimg.cc/wjnq4z4n/Ayele-Balcha-Abebe.png",
+    imgUrl: "https://i.postimg.cc/QxkHkcZX/Ayele-Balcha-Abebe.png",
   },
   {
     id: 9,
-    name: "Hikma Abdela Ahmed",
+    name: "Hikma Abdela",
     positions: ["Engineer"],
     email: "hikmaabdela5@gmail.com",
     phone: "+251966338139",
@@ -118,7 +118,7 @@ const employees = [
 
 <template>
   <div class="py-4 md:py-8">
-    <h1 class="text-3xl font-bold text-center text-[#F9CA6A] mx-4 hover:scale-90">SALEM ARCHITECTURAL AND ENGINEERING CONSULTANCY EMPLOYEES</h1>
+    <h1 class="text-3xl font-bold text-center text-[#F9CA6A] mx-4 hover:scale-110 title">SALEM ARCHITECTURAL AND ENGINEERING CONSULTANCY EMPLOYEES</h1>
   </div>
   <div class="grid grid-cols-1 md:gap-6 gap-3 sm:grid-cols-2 lg:grid-cols-3">
     <div
@@ -134,3 +134,9 @@ const employees = [
     </div>
   </div>
 </template>
+<style scoped>
+.title {
+  font-weight: bold;
+  font-family: "Rajdhani", sans-serif;
+}
+</style>
