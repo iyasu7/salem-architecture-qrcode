@@ -102,5 +102,6 @@ const { employee } = defineProps(["employee"]);
   
 .company {
     font-family: salem;
+    font-weight: 900;
 }
 </style>

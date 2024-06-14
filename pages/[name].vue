@@ -1,118 +1,5 @@
 <script lang="ts" setup>
-const employees = [
-  {
-    id: 1,
-    name: "Israel Mesfin",
-    positions: ["Architect"],
-    email: "israelmesfin97@gmail.com",
-    phone: "+251921797776",
-    imgUrl: "https://i.postimg.cc/g0jg9vVp/Israel-Mesfin.png",
-  },
-  {
-    id: 2,
-    name: "Abdulkerim Yesuf",
-    positions: ["Associate Engineer", "Liaison Officer"],
-    email: "abduyesuf1992@gmail.com",
-    phone: "+251994672469",
-    imgUrl: "https://i.postimg.cc/g2sLd8gM/Abdulkerim-Yesuf-Mekonene.png",
-  },
-  {
-    id: 3,
-    name: "Amehaselassie Sallehunae",
-    positions: ["Architect"],
-    email: "ameha12@gmail.com",
-    phone: "+251913464640",
-    imgUrl: "https://i.postimg.cc/pXTP2rgg/Amehaselassie-Sallehunae.png",
-  },
-  {
-    id: 4,
-    name: "Selamawit Jenberu",
-    positions: ["Engineer"],
-    email: "",
-    phone: "+251913812051",
-    imgUrl: "https://i.postimg.cc/GmL9M9bv/Selamawit-Jenberu-Belay.png",
-  },
-  {
-    id: 5,
-    name: "Eskedar Moges",
-    positions: ["Architect"],
-    email: "eskedarmoges@gmail.com",
-    phone: "+251911018259",
-    imgUrl: "https://i.postimg.cc/mrMDk9jf/Eskedar.png",
-  },
-  {
-    id: 7,
-    name: "Semere Mechal",
-    positions: ["Drafts Person"],
-    email: "semeremechal@gmail.com",
-    phone: "+251947690338",
-    imgUrl: "https://i.postimg.cc/52zd0Cpk/Semere-Mechal-Tesema.png",
-  },
-  {
-    id: 8,
-    name: "Ayele Balcha",
-    positions: ["Engineer"],
-    email: "ayele.balcha@gmail.com ",
-    phone: "+251913057702",
-    imgUrl: "https://i.postimg.cc/QxkHkcZX/Ayele-Balcha-Abebe.png",
-  },
-  {
-    id: 9,
-    name: "Hikma Abdela",
-    positions: ["Engineer"],
-    email: "hikmaabdela5@gmail.com",
-    phone: "+251966338139",
-    imgUrl: "https://i.postimg.cc/c1DN5ZrT/Hikma-Abdela-Ahmed.png",
-  },
-  {
-    id: 10,
-    name: "Arefyne Gebreyohannes",
-    positions: ["Architect"],
-    email: "dejacharef@gmail.com",
-    phone: "+251902635886",
-    imgUrl: "https://i.postimg.cc/jqhjxGCJ/Arefyne-Gebreyohannes-Ambaye.png",
-  },
-  {
-    id: 11,
-    name: "Dejene Demissu",
-    positions: ["Engineer", "Quantity Surveyor"],
-    email: "dejene.demisu72@gmail.com",
-    phone: "+251913812051",
-    imgUrl: "https://i.postimg.cc/pTJPdFVt/Dejene-Demissu.png",
-  },
-  {
-    id: 12,
-    name: "Tezerawork Alemu",
-    positions: ["Administrator"],
-    email: "",
-    phone: "+251913812051",
-    imgUrl: "https://i.postimg.cc/8kvFcqyf/Mahelek.png",
-  },
-  {
-    id: 13,
-    name: "Hemen Sallehunae",
-    positions: ["Architect"],
-    email: "hemen2448@gmail.com",
-    phone: "+251913812051",
-    imgUrl: "https://i.postimg.cc/7hQ8C1pj/Hemen-Sallehunae.png",
-  },
-  {
-    id: 14,
-    name: "Almaw Gebru",
-    positions: ["Driver", "Courier"],
-    email: "",
-    phone: "+251967113211",
-    imgUrl: "https://i.postimg.cc/yxTx2G3c/Almaw-Gebru.png",
-  },
-  {
-    id: 15,
-    name: "Sallehunae Kefyalew",
-    positions: ["CEO", "Architect"],
-    email: "salemaande@gmail.com",
-    phone: "+251911210462",
-    imgUrl: "https://i.postimg.cc/3rkSjDD8/Sallehunae-Kefyalew.png",
-  },
-];
+import { employees } from '~/utils/employes';
 const { name } = useRoute().params;
 const employee = employees.find((employee) => employee.name === name);
 const img = employee?.name.split(" ", "-")[0];
@@ -203,5 +90,6 @@ const img = employee?.name.split(" ", "-")[0];
 <style scoped>
 .company {
     font-family: 'salem';
+    font-weight: 900;
 }
 </style>
