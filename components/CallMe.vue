@@ -1,5 +1,3 @@
-<script lang="ts" setup></script>
-
 <template>
   <svg
     enable-background="new 0 0 50 50"

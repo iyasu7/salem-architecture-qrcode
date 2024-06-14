@@ -95,11 +95,6 @@ const { employee } = defineProps(["employee"]);
   </div>
 </template>
 <style scoped>
-@font-face {
-    font-family: salemFont;
-    src: url(../assets/fonts/Architects\ Draft.ttf);
-}
-  
 .company {
     font-family: salem;
     font-weight: 900;

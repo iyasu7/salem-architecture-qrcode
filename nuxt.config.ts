@@ -15,10 +15,10 @@ export default defineNuxtConfig({
   googleFonts: {
     download: true,
     families: {
-      Poppins: [300, 400, 500, 600, 700],
+      // Poppins: [300, 400, 500, 600, 700],
       Rajdhani: [300, 400, 500, 600, 700],
-      "Protest+Revolution": [400, 500, 600, 700],
-      "Cormorant+Upright": [400, 500, 600, 700],
+      // "Protest+Revolution": [400, 500, 600, 700],
+      // "Cormorant+Upright": [400, 500, 600, 700],
     },
   },
 });
