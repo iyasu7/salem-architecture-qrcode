@@ -46,7 +46,7 @@ const { employee } = defineProps(["employee"]);
         </div>
         <div class="mt-3 text-center mb-2">
           <p class="text-gray-400 flex flex-col company">
-            <span class="text-gray-300 mb-1 text-2xl tracking-wider"
+            <span class="text-gray-300 mb-1 text-2xl tracking-widest"
               >SALEM CONSULT</span
             >
             <span class="text-gray-300 text-[10px]"
