@@ -45,14 +45,16 @@ const { employee } = defineProps(["employee"]);
           </div>
         </div>
         <div class="mt-3 text-center mb-2">
-          <p class="text-gray-400 flex flex-col company">
-            <span class="text-gray-300 mb-1 text-2xl tracking-widest"
-              >SALEM CONSULT</span
+          <div class="text-gray-400 flex flex-col items-center company">
+            <p
+              class="text-gray-300 mb-1 text-2xl tracking-widest flex-grow w-full max-w-xs"
             >
-            <span class="text-gray-300 text-[10px]"
-              >ARCHITECTURAL AND ENGINEERING CONSULTANTS</span
-            >
-          </p>
+              SALEM CONSULT
+            </p>
+            <p class="text-gray-300 text-[9.4px] w-full max-w-xs">
+              ARCHITECTURAL AND ENGINEERING CONSULTANTS
+            </p>
+          </div>
           <br />
           <NuxtLink
             target="_blank"
@@ -76,12 +78,10 @@ const { employee } = defineProps(["employee"]);
             <NuxtLink
               target="_blank"
               to="https://salemconsult.com"
-              class="text-gray-300 flex items-center "
+              class="text-gray-300 flex items-center"
             >
-              <!-- <MyWeb class="w-12 h-12 mr-4" /> -->
               <MyWebLink class="w-10 h-10" />
-              </NuxtLink
-            >
+            </NuxtLink>
             <a
               :href="`mailto:${employee?.email}`"
               class="text-blue-500 hover:text-blue-700 flex items-center gap-3"
@@ -96,7 +96,7 @@ const { employee } = defineProps(["employee"]);
 </template>
 <style scoped>
 .company {
-    font-family: salem;
-    font-weight: 900;
+  font-family: salem;
+  font-weight: 900;
 }
 </style>

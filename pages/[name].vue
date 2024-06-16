@@ -38,14 +38,16 @@ const img = employee?.name.split(" ", "-")[0];
           </div>
         </div>
         <div class="mt-3 text-center mb-2">
-          <p class="text-gray-400 flex flex-col company">
-            <span class="text-gray-300 mb-1 text-2xl tracking-wider"
-              >SALEM CONSULT</span
+          <div class="text-gray-400 flex flex-col items-center company">
+            <p
+              class="text-gray-300 mb-1 text-2xl tracking-widest flex-grow w-full max-w-xs"
             >
-            <span class="text-gray-300 text-[10px]"
-              >ARCHITECTURAL AND ENGINEERING CONSULTANTS</span
-            >
-          </p>
+              SALEM CONSULT
+            </p>
+            <p class="text-gray-300 text-[9.4px] w-full max-w-xs">
+              ARCHITECTURAL AND ENGINEERING CONSULTANTS
+            </p>
+          </div>
           <br />
           <NuxtLink
             target="_blank"
