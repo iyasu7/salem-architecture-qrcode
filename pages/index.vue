@@ -6,7 +6,7 @@ import { employees } from '~/utils/employes';
   <div class="py-4 md:py-8">
     <h1 class="text-3xl font-bold text-center text-[#F9CA6A] mx-4 hover:scale-110 title">SALEM ARCHITECTURAL AND ENGINEERING CONSULTANCY EMPLOYEES</h1>
   </div>
-  <div class="grid grid-cols-1 md:gap-6 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-2">
     <div
       v-for="employee in employees"
       :key="employee.id"

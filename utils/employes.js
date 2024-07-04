@@ -10,7 +10,7 @@ export const employees = [
   {
     id: 2,
     name: "Abdulkerim Yesuf",
-    positions: ["Associate Engineer", "Liaison Officer"],
+    positions: ["Associate Drafting Technician", "Liaison Officer"],
     email: "abduyesuf1992@gmail.com",
     phone: "+251994672469",
     imgUrl: "https://i.postimg.cc/g2sLd8gM/Abdulkerim-Yesuf-Mekonene.png",
@@ -40,15 +40,15 @@ export const employees = [
     imgUrl: "https://i.postimg.cc/mrMDk9jf/Eskedar.png",
   },
   {
-    id: 7,
+    id: 6,
     name: "Semere Mechal",
-    positions: ["Drafts Person"],
+    positions: ["Associate Drafting Technician"],
     email: "semeremechal@gmail.com",
     phone: "+251947690338",
     imgUrl: "https://i.postimg.cc/52zd0Cpk/Semere-Mechal-Tesema.png",
   },
   {
-    id: 8,
+    id: 7,
     name: "Ayele Balcha",
     positions: ["Engineer"],
     email: "ayele.balcha@gmail.com ",
@@ -56,7 +56,7 @@ export const employees = [
     imgUrl: "https://i.postimg.cc/QxkHkcZX/Ayele-Balcha-Abebe.png",
   },
   {
-    id: 9,
+    id: 8,
     name: "Hikma Abdela",
     positions: ["Engineer"],
     email: "hikmaabdela5@gmail.com",
@@ -64,7 +64,7 @@ export const employees = [
     imgUrl: "https://i.postimg.cc/c1DN5ZrT/Hikma-Abdela-Ahmed.png",
   },
   {
-    id: 10,
+    id: 9,
     name: "Arefyne Gebreyohannes",
     positions: ["Architect"],
     email: "dejacharef@gmail.com",
@@ -72,7 +72,7 @@ export const employees = [
     imgUrl: "https://i.postimg.cc/jqhjxGCJ/Arefyne-Gebreyohannes-Ambaye.png",
   },
   {
-    id: 11,
+    id: 10,
     name: "Dejene Demissu",
     positions: ["Engineer", "Quantity Surveyor"],
     email: "dejene.demisu72@gmail.com",
@@ -80,25 +80,33 @@ export const employees = [
     imgUrl: "https://i.postimg.cc/pTJPdFVt/Dejene-Demissu.png",
   },
   {
-    id: 12,
+    id: 11,
     name: "Tezerawork Alemu",
     positions: ["Administrator"],
     email: "",
-    phone: "+251913812051",
+    phone: "+251966716008",
     imgUrl: "https://i.postimg.cc/8kvFcqyf/Mahelek.png",
   },
   {
-    id: 13,
+    id: 12,
     name: "Hemen Sallehunae",
     positions: ["Architect"],
     email: "hemen2448@gmail.com",
-    phone: "+251913812051",
+    phone: "+251920732448",
     imgUrl: "https://i.postimg.cc/7hQ8C1pj/Hemen-Sallehunae.png",
+  },
+  {
+    id: 13,
+    name: "Yonatan Abebe",
+    positions: ["Engineer"],
+    email: "yonatanabebe22@gmail.com",
+    phone: "+251939254941",
+    imgUrl: "https://i.postimg.cc/RFRBmZck/Yonatan-Abebe.png",
   },
   {
     id: 14,
     name: "Almaw Gebru",
-    positions: ["Driver", "Courier"],
+    positions: ["Liaison Officer"],
     email: "",
     phone: "+251967113211",
     imgUrl: "https://i.postimg.cc/yxTx2G3c/Almaw-Gebru.png",
@@ -112,3 +120,4 @@ export const employees = [
     imgUrl: "https://i.postimg.cc/3rkSjDD8/Sallehunae-Kefyalew.png",
   },
 ];
+
