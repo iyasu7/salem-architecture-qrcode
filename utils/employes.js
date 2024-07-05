@@ -65,18 +65,18 @@ export const employees = [
   },
   {
     id: 9,
-    name: "Arefyne Gebreyohannes",
+    name: "Arefayne Gebreyohannes",
     positions: ["Architect"],
     email: "dejacharef@gmail.com",
     phone: "+251902635886",
-    imgUrl: "https://i.postimg.cc/jqhjxGCJ/Arefyne-Gebreyohannes-Ambaye.png",
+    imgUrl: "https://i.postimg.cc/1RWyH9sP/Aref-new-pic.png",
   },
   {
     id: 10,
-    name: "Dejene Demissu",
+    name: "Dejene Demisu",
     positions: ["Engineer", "Quantity Surveyor"],
     email: "dejene.demisu72@gmail.com",
-    phone: "+251913812051",
+    phone: "+251911418551",
     imgUrl: "https://i.postimg.cc/pTJPdFVt/Dejene-Demissu.png",
   },
   {
