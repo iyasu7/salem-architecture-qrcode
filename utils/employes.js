@@ -69,7 +69,7 @@ export const employees = [
     positions: ["Architect"],
     email: "dejacharef@gmail.com",
     phone: "+251902635886",
-    imgUrl: "https://i.postimg.cc/1RWyH9sP/Aref-new-pic.png",
+    imgUrl: "https://i.postimg.cc/QMsLDPh0/Aref-new-pic.png",
   },
   {
     id: 10,
