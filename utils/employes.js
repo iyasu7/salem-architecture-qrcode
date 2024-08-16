@@ -105,6 +105,22 @@ export const employees = [
   },
   {
     id: 14,
+    name: "Ashenafi Takele",
+    positions: ["Site Engineer"],
+    email: "ashenafi7@yahoo.com",
+    phone: "+251920647581",
+    imgUrl: "https://i.postimg.cc/KzSMC0MR/Ashenafi-Takele.png",
+  },
+  {
+    id: 15,
+    name: "Tilahun Gebremichael",
+    positions: ["IT Engineer"],
+    email: "tilahunmichael46@gmail.com",
+    phone: "+251912700003",
+    imgUrl: "https://i.postimg.cc/GpsDMW9W/Tilahun-Gebremichael.png",
+  },
+  {
+    id: 16,
     name: "Almaw Gebru",
     positions: ["Liaison Officer"],
     email: "",
@@ -112,7 +128,7 @@ export const employees = [
     imgUrl: "https://i.postimg.cc/yxTx2G3c/Almaw-Gebru.png",
   },
   {
-    id: 15,
+    id: 17,
     name: "Sallehunae Kefyalew",
     positions: ["CEO", "Architect"],
     email: "salemaande@gmail.com",
